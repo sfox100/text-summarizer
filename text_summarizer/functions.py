@@ -8,7 +8,7 @@ def summarize(prompt):
             model="text-davinci-003",
             prompt=augmented_prompt,
             temperature=.5,
-            max_tokens=1000,
+            max_tokens=4000,
         )["choices"][0]["text"]
     except:
         st.write('There was an error =(')
